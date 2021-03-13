@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ColorDiv</title>
+    <style>
+        body
+        {
+            height: 1200px;
+        }
+
+    .menu-bar
+{
+    background: rgb(110, 156, 110);
+    text-align: center;
+    border-radius: 3px;
+    
+}
+.menu-bar a
+{
+    color: #fff;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li
+{
+ width: 120px;
+ margin: 15px;
+ padding: 15px;
+   
+}
+.menu-bar ul li a:link
+{
+    text-decoration:none;
+    color: #fff;
+}
+.active,.menu-bar ul li:hover
+{
+    background:#7db470;
+    border-radius: 3px;
+    
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+
+.sub-menu1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1
+{
+    display: block;
+    position: absolute;
+    background:rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover  .sub-menu1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover  .sub-menu1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+.menu-bar ul li:hover  .sub-menu1 ul li a:hover
+{
+    color: #4e8f40;
+}
+
+.fa-angle-right
+{
+    float: right;
+}
+
+
+.sub-menu2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu2 
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #242121
+
+}
+.div
+{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-top:17px;
+}
+
+.div-box
+{
+    width: 290px;
+    height:311px;
+    background: #232627;
+    float: left;
+    margin-left:30px;
+    margin-top: 6%;
+}
+.div-box1
+{
+    width: 290px;
+    height:311px;
+    background: red;
+    float: left;
+    margin-left:30px;
+    margin-top: 6%;
+}
+.div-box2
+{
+    width: 290px;
+    height:311px;
+    background: #942b23;
+    float: left;
+    margin-left:30px;
+    margin-top: 6%;
+}
+.div-box3
+{
+    width: 290px;
+    height:311px;
+    background: #5db067;
+    float: left;
+    margin-left:30px;
+    margin-top: 6%;
+}
+#btn1
+{
+     
+    color:beige;
+    background-color: rgb(129, 105, 105);
+    margin: auto 80px;
+    margin-top: 30%;
+    padding: 20px;
+    cursor: pointer;
+}
+#btn1:hover
+{
+    background-color: #f368e0;
+    opacity: 0.4;
+
+}
+#btn2
+{
+     
+    color:beige;
+    background-color: rgb(129, 105, 105);
+    margin: auto 80px;
+    margin-top: 30%;
+    padding: 20px;
+    cursor: pointer;
+
+}
+#btn2:hover
+{
+    background-color: #f368e0;
+    opacity: 0.4;
+
+}
+#btn3
+{
+     
+    color:beige;
+    background-color: rgb(129, 105, 105);
+    margin: auto 80px;
+    margin-top: 30%;
+    padding: 20px;
+    cursor: pointer;
+
+}
+#btn3:hover
+{
+    background-color: #f368e0;
+    opacity: 0.4;
+
+}
+#btn4
+{
+     
+    color:beige;
+    background-color: rgb(129, 105, 105);
+    margin: auto 80px;
+    margin-top: 30%;
+    padding: 20px;
+    cursor: pointer;
+
+}
+#btn4:hover
+{
+    background-color: #f368e0;
+    opacity: 0.4;
+
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #c5dbc8;
+   color: white;
+   text-align: center;
+}
+    </style>
+</head>
+<body>
+        <div class="menu-bar">
+                <ul>
+                    <li class="active"> <a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i>About us</a>
+                        <!--انشاء dropdown-->
+                        <div class="sub-menu1">
+                            <ul>
+                                <li> <a href="#">Mission</a></li>
+                                <li> <a href="#">team</a></li>
+
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    </li>
+                    <li><a href="#"><i class="fa fa-clone"></i>services</a>
+                        <!--انشاء dropdown-->
+        
+                        <div class="sub-menu1">
+                                <ul>
+                                    <li> <a href="#">Web Designing</a></li>
+                                    <li class="hover-me"> <a href="#">Marketing <i class="fa fa-angle-right"></i></a>
+                                     
+                                    </li>
+                                   
+                                    </li>
+                                </ul>
+                            </div>
+                        <!--انشاء dropdown-->
+                    </li>
+                    <li><a href="#"><i class="fa fa-users"></i>Cilents</a></li>
+                    <li><a href="#"><i class="fa fa-inr"></i>Pricing</a></li>
+                    <li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+                </ul>
+        </div>
+        <!-- انشاء الdiv -->
+        <div class="div">
+        <div class="div-box"> <button id="btn1"> SwitchColor </button> </div>
+        <div class="div-box1"> <button id="btn2"> SwitchColor </button> </div>
+        <div class="div-box2"> <button id="btn3"> SwitchColor </button> </div>
+        <div class="div-box3"> <button id="btn4"> SwitchColor </button> </div>
+        <div class="clearfix"></div>
+         </div>
+        <!-- انهاء الdiv -->
+        <!--FOOTER-->
+        <div class="footer">
+                <h5>&copy;kotibahmohamad.com</h5>
+              </div>
+
+
+        <!--FOOTER-->
+<script>
+var color=["#232627","#f368e0"];
+var i = 0;
+document.querySelector("#btn1").addEventListener("click",function(){
+
+    i = i <color.length ? ++i : 0;
+        document.querySelector(".div-box").style.background = color[i];
+})
+
+var color1=["red","#15ed4f"];
+var i = 0;
+document.querySelector("#btn2").addEventListener("click",function(){
+
+    i = i <color1.length ? ++i : 0;
+        document.querySelector(".div-box1").style.background = color1[i];
+})
+
+var color2=["#942b23","#a68583"];
+var i = 0;
+document.querySelector("#btn3").addEventListener("click",function(){
+
+    i = i <color2.length ? ++i : 0;
+        document.querySelector(".div-box2").style.background = color2[i];
+})
+
+var color3=["#5db067","#00ff1f"];
+var i = 0;
+document.querySelector("#btn4").addEventListener("click",function(){
+
+    i = i <color3.length ? ++i : 0;
+        document.querySelector(".div-box3").style.background = color3[i];
+})
+
+
+</script>
+</body>
+</html>
+
+
+
